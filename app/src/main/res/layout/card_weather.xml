@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC"
+    app:cardBackgroundColor="#ECECEC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/list_weather_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sunny_mini" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/list_weather_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomorrow"
+                android:textColor="#595959"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/list_weather_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:textColor="#595959"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/list_weather_temp_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="78°"
+                android:textColor="#595959"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/list_weather_temp_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="68°"
+                android:textColor="#595959"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
